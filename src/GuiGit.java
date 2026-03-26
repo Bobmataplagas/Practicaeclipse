@@ -5,6 +5,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class GuiGit extends JFrame {
 
@@ -41,6 +43,15 @@ public class GuiGit extends JFrame {
 		JButton btnMaster = new JButton("Hola desde el master");
 		btnMaster.setBounds(70, 89, 151, 23);
 		contentPane.add(btnMaster);
+		
+		JButton btnNewButton = new JButton("empanedado");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Hola desde la rama de alex");
+			}
+		});
+		btnNewButton.setBounds(92, 149, 89, 23);
+		contentPane.add(btnNewButton);
 		
 		
 		
