@@ -64,6 +64,15 @@ public class GuiGit extends JFrame {
 		BtnJosh.setBounds(212, 150, 151, 42);
 		contentPane.add(BtnJosh);
 		
+		JButton btnBotonNick = new JButton("Boton Nick");
+		btnBotonNick.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Hola esta es la rama de Nick");
+			}
+		});
+		btnBotonNick.setBounds(275, 89, 88, 22);
+		contentPane.add(btnBotonNick);
+		
 		
 		
 
