@@ -7,6 +7,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
 
 public class GuiGit extends JFrame {
 
@@ -52,6 +53,16 @@ public class GuiGit extends JFrame {
 		});
 		btnNewButton.setBounds(92, 149, 89, 23);
 		contentPane.add(btnNewButton);
+		
+		JButton BtnJosh = new JButton("Boton Josh");
+		BtnJosh.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Hola esta es la rama de Josh");
+			}
+		});
+		BtnJosh.setFont(new Font("STLiti", Font.PLAIN, 21));
+		BtnJosh.setBounds(212, 150, 151, 42);
+		contentPane.add(BtnJosh);
 		
 		
 		
